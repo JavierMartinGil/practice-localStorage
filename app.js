@@ -27,8 +27,8 @@ function eventListeners() {
 function agregarTweet(e) {
      e.preventDefault();
      // leer el valor del textarea
-     let tweet = document.getElementById('tweet').value;
-     tweet = tweet.trim();
+     let tweet = (document.getElementById('tweet').value).trim();
+//      tweet = tweet.trim();
      if(tweet == ""){
           alert('Tienes que esribir algun tweet');
           return;
