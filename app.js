@@ -28,6 +28,7 @@ function agregarTweet(e) {
      e.preventDefault();
      // leer el valor del textarea
      const tweet = document.getElementById('tweet').value;
+     tweet = tweet.replace('\n', '');
      if(tweet == ""){
           alert('Tienes que esribir algun tweet');
           return;
